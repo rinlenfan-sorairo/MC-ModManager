@@ -80,7 +80,7 @@
               "RelativeDocumentMoniker": "Services\\VersionupService.cs",
               "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Services\\VersionupService.cs",
               "RelativeToolTip": "Services\\VersionupService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T02:01:55.698Z",
               "EditorCaption": ""
@@ -95,8 +95,7 @@
               "RelativeToolTip": "Views\\GameTabContents.xaml.cs",
               "ViewState": "AQIAADcAAAAAAAAAAAAAAEAAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T09:12:25.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T09:12:25.486Z"
             },
             {
               "$type": "Document",
@@ -108,8 +107,7 @@
               "RelativeToolTip": "Services\\GameManagerService.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAAAD0AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T11:24:57.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T11:24:57.988Z"
             },
             {
               "$type": "Document",
@@ -121,8 +119,7 @@
               "RelativeToolTip": "Model\\GameDataModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T11:16:07.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T11:16:07.238Z"
             },
             {
               "$type": "Document",
@@ -132,7 +129,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T02:46:29.363Z",
               "EditorCaption": ""
@@ -146,8 +143,7 @@
               "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Views\\HomeTabContents.xaml",
               "RelativeToolTip": "Views\\HomeTabContents.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-21T09:05:29.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T09:05:29.933Z"
             },
             {
               "$type": "Document",
@@ -159,8 +155,7 @@
               "RelativeToolTip": "Helper\\PathHelper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T09:18:22.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T09:18:22.242Z"
             },
             {
               "$type": "Document",
@@ -172,8 +167,7 @@
               "RelativeToolTip": "Helper\\JsonHelper.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAAwCIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T09:18:21.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T09:18:21.217Z"
             },
             {
               "$type": "Document",
@@ -185,8 +179,7 @@
               "RelativeToolTip": "App.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T08:09:02.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T08:09:02.027Z"
             },
             {
               "$type": "Document",
@@ -198,8 +191,7 @@
               "RelativeToolTip": "AssemblyInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T05:19:08.725Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T05:19:08.725Z"
             },
             {
               "$type": "Document",
@@ -210,8 +202,7 @@
               "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-21T05:18:14.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T05:18:14.647Z"
             },
             {
               "$type": "Document",
@@ -223,8 +214,7 @@
               "RelativeToolTip": "Services\\SettingsService.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAkwCwAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T08:20:48.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T08:20:48.437Z"
             },
             {
               "$type": "Document",
@@ -235,8 +225,7 @@
               "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-21T05:19:09.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T05:19:09.754Z"
             },
             {
               "$type": "Document",
@@ -248,8 +237,7 @@
               "RelativeToolTip": "Views\\HomeTabContents.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvxcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T09:06:02.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T09:06:02.456Z"
             },
             {
               "$type": "Document",
@@ -260,8 +248,7 @@
               "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Views\\GameTabContents.xaml",
               "RelativeToolTip": "Views\\GameTabContents.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-21T09:12:12.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T09:12:12.609Z"
             }
           ]
         }

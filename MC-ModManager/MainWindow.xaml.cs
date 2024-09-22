@@ -20,10 +20,11 @@ namespace MC_ModManager
         public MainWindow()
         {
             InitializeComponent();
+            /*
             if (!VersionupService.VersionupCheck())
             {
                 MessageBox.Show("最新のversionがあります。バージョンアップを行ってください。");
-            }
+            }*/
         }
     }
 }
