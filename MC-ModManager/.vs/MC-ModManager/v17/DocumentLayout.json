@@ -1,0 +1,271 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\services\\versionupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:services\\versionupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\views\\gametabcontents.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:views\\gametabcontents.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\services\\gamemanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:services\\gamemanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\helper\\pathhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:helper\\pathhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\model\\gamedatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:model\\gamedatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\helper\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:helper\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\views\\hometabcontents.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:views\\hometabcontents.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\services\\settingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:services\\settingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\views\\hometabcontents.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:views\\hometabcontents.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|c:\\users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\mc-modmanager\\mc-modmanager\\views\\gametabcontents.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{763A417D-3F21-4009-B17E-87DE600B87FF}|MC-ModManager.csproj|solutionrelative:views\\gametabcontents.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VersionupService.cs",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Services\\VersionupService.cs",
+              "RelativeDocumentMoniker": "Services\\VersionupService.cs",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Services\\VersionupService.cs",
+              "RelativeToolTip": "Services\\VersionupService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T02:01:55.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameTabContents.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Views\\GameTabContents.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\GameTabContents.xaml.cs",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Views\\GameTabContents.xaml.cs",
+              "RelativeToolTip": "Views\\GameTabContents.xaml.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAAEAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T09:12:25.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameManagerService.cs",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Services\\GameManagerService.cs",
+              "RelativeDocumentMoniker": "Services\\GameManagerService.cs",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Services\\GameManagerService.cs",
+              "RelativeToolTip": "Services\\GameManagerService.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAD0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T11:24:57.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameDataModel.cs",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Model\\GameDataModel.cs",
+              "RelativeDocumentMoniker": "Model\\GameDataModel.cs",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Model\\GameDataModel.cs",
+              "RelativeToolTip": "Model\\GameDataModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T11:16:07.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T02:46:29.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeTabContents.xaml",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Views\\HomeTabContents.xaml",
+              "RelativeDocumentMoniker": "Views\\HomeTabContents.xaml",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Views\\HomeTabContents.xaml",
+              "RelativeToolTip": "Views\\HomeTabContents.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-21T09:05:29.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PathHelper.cs",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Helper\\PathHelper.cs",
+              "RelativeDocumentMoniker": "Helper\\PathHelper.cs",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Helper\\PathHelper.cs",
+              "RelativeToolTip": "Helper\\PathHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T09:18:22.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JsonHelper.cs",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Helper\\JsonHelper.cs",
+              "RelativeDocumentMoniker": "Helper\\JsonHelper.cs",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Helper\\JsonHelper.cs",
+              "RelativeToolTip": "Helper\\JsonHelper.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T09:18:21.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T08:09:02.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T05:19:08.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-21T05:18:14.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SettingsService.cs",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Services\\SettingsService.cs",
+              "RelativeDocumentMoniker": "Services\\SettingsService.cs",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Services\\SettingsService.cs",
+              "RelativeToolTip": "Services\\SettingsService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAkwCwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T08:20:48.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-21T05:19:09.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeTabContents.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Views\\HomeTabContents.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\HomeTabContents.xaml.cs",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Views\\HomeTabContents.xaml.cs",
+              "RelativeToolTip": "Views\\HomeTabContents.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T09:06:02.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GameTabContents.xaml",
+              "DocumentMoniker": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Views\\GameTabContents.xaml",
+              "RelativeDocumentMoniker": "Views\\GameTabContents.xaml",
+              "ToolTip": "C:\\Users\\rinle_x18iuha\\workspace\\\u002Bmy_github\\MC-ModManager\\MC-ModManager\\Views\\GameTabContents.xaml",
+              "RelativeToolTip": "Views\\GameTabContents.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-21T09:12:12.609Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
