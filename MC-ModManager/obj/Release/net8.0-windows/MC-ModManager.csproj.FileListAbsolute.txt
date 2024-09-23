@@ -10,7 +10,6 @@ C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\bin\Rele
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\bin\Release\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\MC-ModManager.csproj.AssemblyReference.cache
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\MainWindow.g.cs
-C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\Views\GameTabContents.g.cs
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\Views\HomeTabContents.g.cs
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\App.g.cs
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\GeneratedInternalTypeHelper.g.cs
@@ -18,7 +17,6 @@ C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Rele
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\MC-ModManager_MarkupCompile.lref
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\App.baml
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\MainWindow.baml
-C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\Views\GameTabContents.baml
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\Views\HomeTabContents.baml
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\MC-ModManager.g.resources
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\MC-ModManager.GeneratedMSBuildEditorConfig.editorconfig
@@ -32,3 +30,5 @@ C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Rele
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\MC-ModManager.pdb
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\MC-ModManager.genruntimeconfig.cache
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\ref\MC-ModManager.dll
+C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\Views\ClientTabContents.g.cs
+C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\obj\Release\net8.0-windows\Views\ClientTabContents.baml
