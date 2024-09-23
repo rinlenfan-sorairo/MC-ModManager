@@ -53,7 +53,7 @@ namespace MC_ModManager.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MC-ModManager;V1.0.0.0;component/views/hometabcontents.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MC-ModManager;component/views/hometabcontents.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\HomeTabContents.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

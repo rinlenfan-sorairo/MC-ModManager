@@ -10,7 +10,7 @@
     <Compile Update="Views\HomeTabContents.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\GameTabContents.xaml.cs">
+    <Compile Update="Views\ClientTabContents.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -21,7 +21,7 @@
     <Page Update="Views\HomeTabContents.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\GameTabContents.xaml">
+    <Page Update="Views\ClientTabContents.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -24,11 +24,23 @@
                     <TabItem.Header>
                         <StackPanel Width="auto" Height="auto">
                             <materialDesign:PackIcon Width="24" Height="24" HorizontalAlignment="Center" Kind="Controller" />
-                            <TextBlock HorizontalAlignment="Center" Text="ゲーム" />
+                            <TextBlock HorizontalAlignment="Center" Text="クライアント" />
                         </StackPanel>
                     </TabItem.Header>
-                    <views:GameTabContents />
+                    <views:ClientTabContents />
                 </TabItem>
+                <!--
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Width="auto" Height="auto">
+                            <materialDesign:PackIcon Width="24" Height="24" HorizontalAlignment="Center" Kind="Controller" />
+                            <TextBlock HorizontalAlignment="Center" Text="サーバー" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <views:ServerTabContents />
+                </TabItem>
+                -->
+                
             </TabControl>
         </materialDesign:Card>
     </Grid>

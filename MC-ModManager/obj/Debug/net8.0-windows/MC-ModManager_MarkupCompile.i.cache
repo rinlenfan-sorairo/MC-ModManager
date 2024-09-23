@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\rinle_x18iuha\workspace\+my_github\MC-ModManager\MC-ModManager\App.xaml
-3-702577280
+3-579925389
 
-141216823728
+171015394270
 2031109293714
-MainWindow.xaml;Views\GameTabContents.xaml;Views\HomeTabContents.xaml;
+MainWindow.xaml;Views\ClientTabContents.xaml;Views\HomeTabContents.xaml;
 
-False
+True
 
