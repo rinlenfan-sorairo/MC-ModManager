@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MC-ModManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6252bc958615b3f4e4bc506caebf55de0fe00699")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ffab92c58676e15bb64083109c38d8666d4836b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MC-ModManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MC-ModManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
