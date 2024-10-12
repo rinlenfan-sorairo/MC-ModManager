@@ -9,6 +9,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
+using Path = System.IO.Path;
 
 namespace MC_ModManager
 {
@@ -20,11 +22,16 @@ namespace MC_ModManager
         public MainWindow()
         {
             InitializeComponent();
-            /*
-            if (!VersionupService.VersionupCheck())
-            {
-                MessageBox.Show("最新のversionがあります。バージョンアップを行ってください。");
-            }*/
+
+            Initialize();
+        }
+
+        private void Initialize()
+        {
+            SettingsService.Initialize();
+            Directory.CreateDirectory(SettingsService.AppdataPath);
+            Directory.CreateDirectory(Path.Combine(SettingsService.AppdataPath, "gamelist"));
+            var settings = SettingsService.Load();
         }
     }
 }

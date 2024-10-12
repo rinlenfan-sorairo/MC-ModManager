@@ -1,131 +1,150 @@
-﻿using MC_ModManager.Helper;
-using MC_ModManager.Model;
-using Newtonsoft.Json.Linq;
+﻿using MC_ModManager.Model;
+using MC_ModManager.Models;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using System.Windows;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MC_ModManager.Services
 {
-    internal class MinecraftService
+    public class MinecraftService
     {
-        private static readonly string MinecraftProfilePath = SettingsService.GetPath("MinecraftAppData") + "launcher_profiles.json";
-
-        private static int? MinecraftProfilesVersion;
-        private static JObject? MinecraftProfilesSettings;
-        public static void LaunchMinecraft()
+        public static string SearchMinecraftPath()
         {
-            Process process = new Process();
-            process.StartInfo.FileName = SettingsService.GetPath("MinecraftLauncher");
-            process.Start();
+            if (File.Exists("C:\\XboxGames\\Minecraft Launcher\\Content\\Minecraft.exe"))
+                return "C:\\XboxGames\\Minecraft Launcher\\Content\\Minecraft.exe";
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Exe files (*.exe)|*.exe|All files (*.*)|*.*";
+            MessageBox.Show("MinecraftLauncherの実行ファイルが見つかりませんでした。\nMinecraftLauncherの実行ファイル(*.exe)を選択してください。");
+            if (openFileDialog.ShowDialog() == true)
+            {
+                // 選択されたファイルのパスを取得
+                string filePath = openFileDialog.FileName;
+                return filePath;
+            }
+            MessageBox.Show("MinecraftLauncherのパスが見つかりませんでした。\n一部機能を制限します。");
+            return "enpty";
         }
 
-        public static ObservableCollection<MinecraftProfileModel> LoadMinecraftProfiles()
+        public static string SearchMinecraftAppdataPath()
         {
-            ObservableCollection<MinecraftProfileModel> profiles = new ObservableCollection<MinecraftProfileModel>();
-
+            if (Directory.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft")))
+                return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft");
+            OpenFolderDialog openFolderDialog = new OpenFolderDialog();
+            openFolderDialog.Title = "MinecraftのAppDataフォルダを選択してください。";
+            openFolderDialog.Multiselect = false;
+            MessageBox.Show("MinecraftのAppDataフォルダが見つかりませんでした。\nMinecraftのAppDataフォルダを選択してください。");
+            if (openFolderDialog.ShowDialog() == true)
+            {
+                // 選択されたフォルダのパスを取得
+                string FolderPath = openFolderDialog.FolderName;
+                return FolderPath;
+            }
+            MessageBox.Show("MinecraftのAppDataフォルダが見つかりませんでした。\n機能を制限します。");
+            return "enpty";
+        }
+        public static bool StartMinecraft()
+        {
             try
             {
-                string jsonContent = File.ReadAllText(MinecraftProfilePath);
-                JObject jsonObject = JObject.Parse(jsonContent);
-
-                if (jsonObject.ContainsKey("settings"))
-                    MinecraftProfilesSettings = (JObject)jsonObject["settings"];
-                else
+                var settings = SettingsService.Load();
+                if (settings != null)
                 {
-                    throw new ArgumentException("キー 'settings' が存在しません。");
-                }
-                if (jsonObject.ContainsKey("version"))
-                    MinecraftProfilesVersion = 3;
-                else
-                {
-                    throw new ArgumentException("キー 'version' が存在しません。");
-                }
-                if (jsonObject.ContainsKey("profiles"))
-                {
-                    JObject profilesObject = (JObject)jsonObject["profiles"];
-                    foreach (KeyValuePair<string, JToken?> profile in profilesObject)
+                    if (settings.Minecraft_path != "enpty")
                     {
-                        string profileKey = profile.Key;
-                        JObject? profileValue = profile.Value as JObject;
-                        if (profileValue != null)
+                        ProcessStartInfo startInfo = new ProcessStartInfo
                         {
-                            MinecraftProfileModel profileModel = new MinecraftProfileModel(profile.Key, profileValue);
-                            profiles.Add(profileModel);
-                        }
+                            FileName = settings.Minecraft_path,
+                            UseShellExecute = true
+                        };
+                        Process process = Process.Start(startInfo);
+                        return true;
                     }
-                    return profiles;
                 }
-                else
-                {
-                    throw new ArgumentException("キー 'profiles' が存在しません。");
-                }
+                MessageBox.Show("この機能は制限されています。");
+                return false;
+
             }
             catch (Exception ex)
             {
-                Console.WriteLine("エラー: " + ex.Message);
-                return null;
+                MessageBox.Show("Minecraftの起動に失敗しました。");
+                Console.WriteLine($"プロセスの開始中にエラーが発生しました: {ex.Message}");
+                return false;
             }
         }
-
-
-        public static void SaveMinecraftProfiles(ObservableCollection<MinecraftProfileModel> profiles)
+        public static MinecraftProfilesModel LoadMinecraftProfiles()
         {
-            JObject profilesJson = new JObject();
-            foreach (MinecraftProfileModel profile in profiles)
+            var settings = SettingsService.Load();
+            string profilePath = Path.Combine(settings.Minecraft_appdata_path, "launcher_profiles.json");
+            MessageBox.Show(profilePath);
+            string fileContent = File.ReadAllText(profilePath);
+            MessageBox.Show(fileContent);
+            return JsonSerializer.Deserialize<MinecraftProfilesModel>(fileContent);
+        }
+        public static void SaveMinecraftProfiles(MinecraftProfilesModel profiles)
+        {
+            var settings = SettingsService.Load();
+            string profilePath = Path.Combine(settings.Minecraft_appdata_path, "launcher_profiles.json");
+            File.WriteAllText(profilePath, JsonSerializer.Serialize(profiles, new JsonSerializerOptions
             {
-                JObject profileJson = new JObject
-                {
-                    { "gameDir", profile.gameDir },
-                    { "icon", profile.icon },
-                    { "lastVersionId", profile.lastVersionId },
-                    { "name", profile.name },
-                    { "type", profile.type }
-                };
-                if (profile.created != null)
-                    profileJson.Add("created", profile.created);
-                if (profile.javaArgs != null)
-                    profileJson.Add("javaArgs", profile.javaArgs);
-                if (profile.lastUsed != null)
-                    profileJson.Add("lastUsed", profile.lastUsed);
-                profilesJson.Add(profile.id, profileJson);
-            }
-
-            JObject MinecraftProfilesJson = new JObject
-            {
-                { "profiles", profilesJson },
-                { "settings", MinecraftProfilesSettings },
-                { "version", MinecraftProfilesVersion }
-            };
-
-
-            JsonHelper.CreateDynamicJson(MinecraftProfilePath, MinecraftProfilesJson);
+                WriteIndented = true
+            }));
         }
 
-        public static ObservableCollection<MinecraftProfileModel> AddMinecraftProfiles(MinecraftProfileModel newProfile)
+        public static void AddMinecraftProfile(string uuid, MinecraftProfile addProfile)
         {
-            ObservableCollection<MinecraftProfileModel> profiles = LoadMinecraftProfiles();
-            profiles.Add(newProfile);
+            var profiles= LoadMinecraftProfiles();
+            profiles.Profiles.Add(uuid, addProfile);
             SaveMinecraftProfiles(profiles);
-            return profiles;
         }
-
-        public static ObservableCollection<MinecraftProfileModel> RemoveMinecraftProfiles(string id)
+        public static void DeleteMinecraftProfile(string uuid)
         {
-            ObservableCollection<MinecraftProfileModel> profiles = LoadMinecraftProfiles();
-            var profileToRemove = profiles.FirstOrDefault(p => p.id == id);
-            if (profileToRemove != null)
-            {
-                profiles.Remove(profileToRemove);
-                SaveMinecraftProfiles(profiles);
-            }
-            return profiles;
+            var profiles = LoadMinecraftProfiles();
+            profiles.Profiles.Remove(uuid);
+            SaveMinecraftProfiles(profiles);
         }
+    }
+
+    public class MinecraftProfilesModel
+    {
+        [JsonPropertyName("profiles")]
+        public required Dictionary<string, MinecraftProfile> Profiles { get; set; }
+        [JsonPropertyName("version")]
+        public required int Version { get; set; }
+    }
+    public class MinecraftProfilesSettingsMode
+    {
+        [JsonPropertyName("crashAssistance")]
+        public required bool CrashAssistance { get; set; }
+
+        [JsonPropertyName("enableAdvanced")]
+        public required bool EnableAdvanced { get; set; }
+        [JsonPropertyName("enableAnalytics")]
+        public required bool EnableAnalytics { get; set; }
+        [JsonPropertyName("enableHistorical")]
+        public required bool EnableHistorical { get; set; }
+        [JsonPropertyName("enableReleases")]
+        public required bool EnableReleases { get; set; }
+        [JsonPropertyName("EnableSnapshots")]
+        public required bool enableSnapshots { get; set; }
+        [JsonPropertyName("keepLauncherOpen")]
+        public required bool KeepLauncherOpen { get; set; }
+        [JsonPropertyName("profileSorting")]
+        public required string ProfileSorting { get; set; }
+        [JsonPropertyName("showGameLog")]
+        public required bool ShowGameLog { get; set; }
+        [JsonPropertyName("showMenu")]
+        public required bool ShowMenu { get; set; }
+        [JsonPropertyName("soundOn")]
+        public required bool SoundOn { get; set; }
     }
 }

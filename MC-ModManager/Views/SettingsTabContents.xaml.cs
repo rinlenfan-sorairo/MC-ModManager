@@ -1,9 +1,5 @@
-﻿using MC_ModManager.Services;
-using Microsoft.Win32;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,35 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static MaterialDesignThemes.Wpf.Theme;
 
 namespace MC_ModManager.Views
 {
     /// <summary>
     /// UserControl1.xaml の相互作用ロジック
     /// </summary>
-    public partial class ClientTabContents : UserControl
+    public partial class SettingsTabContents : UserControl
     {
-        public ClientTabContents()
+        public SettingsTabContents()
         {
             InitializeComponent();
         }
-
-        private void LunchMinecraft(object sender, RoutedEventArgs e)
-        {
-           // MinecraftService.StartMinecraft();
-        }
-
-        private void ImportGame(object sender, RoutedEventArgs e)
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("test");
         }
 
-        private void EditGame(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("test");
-        }
-
-        private void DeleteGame(object sender, RoutedEventArgs e)
+        private void BrowseButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("test");
         }

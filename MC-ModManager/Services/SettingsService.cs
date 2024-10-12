@@ -1,65 +1,58 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System.Text.Json;
 using System.IO;
-using IniParser;
-using IniParser.Model;
-using MC_ModManager.Helper;
-
-
+using System.Reflection;
+using System.Windows;
+using System.Collections.Generic;
+using System;
 
 namespace MC_ModManager.Services
 {
-    internal class SettingsService
+    public static class SettingsService
     {
-        private static readonly string IniFilePath = Path.Combine(PathHelper.ExecutableDirectory, "settings.ini");
-        private static readonly FileIniDataParser Parser = new FileIniDataParser();
+        public static string ExePath { get; } = Assembly.GetExecutingAssembly().Location;
+        public static string ExeDirectory { get; } = Path.GetDirectoryName(ExePath) ?? string.Empty;
+        public static string SettingsPath { get; } = Path.Combine(ExeDirectory, "settings.json");
+        public static string AppdataPath { get; } = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".mcmm");
 
-        public static IniData ReadSettings()
+        public static void Initialize()
         {
-            if (!File.Exists(IniFilePath)) CreateSettings();
-
-            IniData data = Parser.ReadFile(IniFilePath);
-            if (data["settings"]["Version"] != "0.1.0")
-                data = UpdateSettings(data);
-
-                return data;
+            if (!File.Exists(SettingsPath))
+            {
+                var settings = new SettingsModel
+                {
+                    ExeDirectory_path = ExeDirectory,
+                    Minecraft_path = MinecraftService.SearchMinecraftPath(),
+                    Minecraft_appdata_path = MinecraftService.SearchMinecraftAppdataPath()
+                };
+                string jsonString = JsonSerializer.Serialize(settings, new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                    WriteIndented = true
+                });
+                File.WriteAllText(SettingsPath, jsonString);
+            }
+            Console.WriteLine();
         }
-
-        public static void CreateSettings()
+        public static SettingsModel Load()
         {
-            IniData data = new IniData();
-
-            string mlpath = PathHelper.FindFileInDirectories([
-                @"C:\Program Files (x86)\Minecraft Launcher",
-                @"C:\Program Files\Minecraft Launcher",
-                @"C:\XboxGames\Minecraft Launcher\Content",
-                Path.Combine(PathHelper.AppDataPath, ".minecraft"),
-                ],
-                [
-                "MinecraftLauncher.exe",
-                "Minecraft.exe"
-                ]);
-
-            data["settings"]["Version"] = "0.1.0";
-            data["path"]["MinecraftLauncher"] = mlpath;
-            data["path"]["MinecraftAppData"] = Path.Combine(PathHelper.AppDataPath, ".minecraft");
-            data["path"]["MC_ModManagerAppData"] = Path.Combine(PathHelper.AppDataPath, ".mcmm");
-
-
-            Parser.WriteFile(IniFilePath, data);
+            if (!File.Exists(SettingsPath))
+            {
+                Initialize();
+            }
+                string jsonString = File.ReadAllText(SettingsPath);
+            var settings = JsonSerializer.Deserialize<SettingsModel>(jsonString, new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            });
+            return settings ?? new SettingsModel{};
         }
+    }
 
-        public static IniData UpdateSettings(IniData data)
-        {
-            data["settings"]["Version"] = "0.1.0";
-            Parser.WriteFile(IniFilePath, data);
-
-            return data;
-        }
-
-        public static string GetPath(string key)
-        {
-            IniData data = ReadSettings();
-            return data["path"][key];
-        }
+    public class SettingsModel
+    {
+        public string? ExeDirectory_path { get; set; }
+        public string? Minecraft_path { get; set; }
+        public string? Minecraft_appdata_path { get; set; }
     }
 }

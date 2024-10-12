@@ -9,22 +9,7 @@
 
     <StackPanel Margin="16">
         <TextBlock Margin="0,0,0,8" Style="{StaticResource MaterialDesignHeadline5TextBlock}" Text="  MC - ModManager" />
-        <TextBlock>
-            <Run FontStyle="Italic" Text="　このソフトはマインクラフトのMODの管理を行えるソフトです。" />
-            <LineBreak />
-            <LineBreak />
-            <LineBreak />
-            <Run Text="このソフトでMODを受け取り遊ぼうと思っている方は「ゲーム」の欄から配布されたデータを読み込み、準備を行ってください。" />
-            <LineBreak />
-            <LineBreak />
-            <Run Text="MODの配布を考えている方はMODの欄から配布するデータの設定を行ってください。" />
-            <LineBreak />
-            <LineBreak />
-            <LineBreak />
-            <Run Text="このアプリケーションは自動アップデート機能が実装されていません。" />
-            <LineBreak />
-            <LineBreak />
-            <Run Text="通知は送りますのでアプリのアップデートをご協力下さい。" />
-        </TextBlock>
-        </StackPanel>
+        <TextBlock Margin="0,0,0,32" FontStyle="Italic" Text="　このソフトはマインクラフトのMODの管理を行えるソフトです。"/>
+        <TextBlock TextWrapping="Wrap" Text="このアプリは、MinecraftのMODを簡単に管理できるツールです。MODのインストール、削除、更新をワンクリックで行うことができ、MODのバージョン管理や互換性のチェックもサポートしています。また、アプリ内でMODの設定変更やバックアップ機能も搭載しているため、安心してゲーム環境をカスタマイズできます。"/>
+    </StackPanel>
 </UserControl>
